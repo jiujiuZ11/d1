@@ -12,7 +12,7 @@ class Sorter {
     for(String num: s.split(" ")) {
       a.add(Integer.parseInt(num));
     }
-    Collections.sort(a);
+    Collections.sort(a); // sort using a library function to save time
     for(Integer i: a) {
       System.out.print(i + " ");
     }
