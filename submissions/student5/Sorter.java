@@ -24,8 +24,9 @@ class Sorter {
     }
 
 
-    for(Integer i: a) {
-      System.out.print(i + " ");
+    for(int i = 0; i < a.size(); i += 1) {
+      System.out.print(a.get(i));
+      if(i < a.size() - 1) { System.out.print(" "); }
     }
     System.out.println();
   }
