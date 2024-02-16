@@ -36,7 +36,7 @@ do
 done
 
 all_results=`find submissions -name "result.txt"`
-grep "Compile error" $all_results > compile-errors.txt
+cat $all_results | grep "Compile error"  > compile-errors.txt
 
 # Here, add code to put all of the results for files that successfully ran into
 # run-results.txt
